@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--当mapper接口和mapper.xml文件关联的时候，命名空间namespace的值就需要配置成接口的全限定名称
+将来我们通过mapper接口的方法名来调用Sql语句-->
+<mapper namespace="com.jxd.mybatisPlus.mapper.IStudentMapper">
+<!--    查询学生基本信息-->
+    <select id="getStudentInfoListByClassNo" resultType="map">
+    select
+    s.student_id,s.student_name,s.sex,s.native_place,s.graduate_school,s.class_no
+    from
+    student s
+    where s.class_no=#{classNo}
+    ORDER BY s.student_id
+    </select>
+    <select id="getStudentInfoListByClassNo2" resultType="map">
+    select
+        s.student_id as id,s.student_name as sName,s.sex,s.native_place as address,s.graduate_school as school,s.class_no,m.*
+        from
+        student s left join
+        (
+            select
+            mix1.*,mix2.*,mix3.overall_score as schoolScore
+            from
+            (
+            select s1.student_id as student_id1,
+            <foreach collection="list" item="courseNo" separator=",">
+                s#{courseNo}.score as score#{courseNo}
+            </foreach>
+            from
+            <foreach collection="list" item="courseNo"  separator=",">
+                (select student_id,score from course_score where course_id = #{courseNo}) s#{courseNo}
+            </foreach>
+            where
+            <foreach collection="list" item="courseNo"  separator="=">
+                s#{courseNo}.student_id
+            </foreach>
+            ) mix1,
+            (
+            select s1.student_id as student_id2,
+            <foreach collection="list1" item="period" separator=",">
+                s#{period}.overall_score  as deptScore#{period}
+            </foreach>
+            from
+            <foreach collection="list1" item="period"  separator=",">
+                (select student_id,overall_score from evaluation_of_dept where period_no = #{period}) s#{period}
+            </foreach>
+            where
+            <foreach collection="list1" item="period"  separator="=">
+                s#{period}.student_id
+            </foreach>
+            )mix2,
+            (SELECT overall_score,student_id as student_id3 FROM evaluation_of_school ORDER BY student_id) mix3
+            <where>
+                mix1.student_id1=
+                mix2.student_id2=
+                mix3.student_id3
+            </where>
+        ) m
+        on
+        s.student_id =
+        m.student_id1
+        <where> s.isdeleted = 0 and s.class_no=#{classNo}
+            <if test="name!=''">
+               and s.student_name like '%' #{name} '%'
+            </if>
+        </where>
+        limit #{startIndex},#{pageSize}
+    </select>
+    <update id="deleteStudentById">
+        update student set  isdeleted = 1 where student_id = #{id}
+    </update>
+
+
+</mapper>

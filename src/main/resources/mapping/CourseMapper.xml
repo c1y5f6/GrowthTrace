@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--当mapper接口和mapper.xml文件关联的时候，命名空间namespace的值就需要配置成接口的全限定名称
+将来我们通过mapper接口的方法名来调用Sql语句-->
+<mapper namespace="com.jxd.mybatisPlus.mapper.ICourseMapper">
+    <select id="getCourseByClass" resultType="map">
+        select c.* from course_selected s ,course c where s.course_id = c.course_id and s.class_no = #{classNo} order by s.course_id
+    </select>
+    <!--    查询班级所选课程课程-->
+    <select id="getSelectedCourseByClassNo" resultType="Integer">
+        SELECT course_id FROM `course_selected` where class_no = 10 order by course_id;
+    </select>
+
+</mapper>

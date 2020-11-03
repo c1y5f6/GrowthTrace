@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mysql
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/view/  #自定义beerle模板位置
+mybatis-plus:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.jxd.mybatisPlus.model
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
