@@ -31,19 +31,24 @@ public class CourseController {
 
     @RequestMapping("/getCourseForStudentTable")
     @ResponseBody
-    public List<Map<String,Object>> getCourseForStudentTable(){
+    public List<String> getCourseForStudentTable(){
         QueryWrapper<Course> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("flag_deleted",0);
-        int flag = 1;
+
         List<Course> list = iCourseService.list(queryWrapper);
-        List<Map<String,Object>> mapList = new ArrayList<>();
-        for ( Course course: list) {
-            Map<String,Object> map = new HashMap<>();
-            map.put("label",course.getcName());
-            map.put("prop","score"+(++flag));
-            mapList.add(map);
+//        int flag = 1;
+//        List<Map<String,Object>> mapList = new ArrayList<>();
+//        for ( Course course: list) {
+//            Map<String,Object> map = new HashMap<>();
+//            map.put("label",course.getcName());
+//            map.put("prop","score"+(++flag));
+//            mapList.add(map);
+//        }
+        List<String> courses = new ArrayList<>();
+        for (Course c :list) {
+            courses.add(c.getcName());
         }
-        return mapList;
+        return courses;
     }
 
     //获取表头label + prop

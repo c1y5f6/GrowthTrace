@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b9aee7-6bbc-47ed-8599-54628a8fe04a" name="Default Changelist" comment="">
+    <list default="true" id="c2b9aee7-6bbc-47ed-8599-54628a8fe04a" name="Default Changelist" comment="delete EmpController">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/005b8ef46da64eb9bc0f9a93aa8f8376-嘤嘤嘤.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/EmpController.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +36,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1jXbggIri5jWgT6MWpWjSPEOnWU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ExpandSpringBootSpringBootSettingsPanel" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -263,8 +270,16 @@
       <workItem from="1604314510461" duration="599000" />
       <workItem from="1604362486215" duration="9704000" />
       <workItem from="1604382303761" duration="11900000" />
-      <workItem from="1604450243628" duration="871000" />
+      <workItem from="1604450243628" duration="5791000" />
     </task>
+    <task id="LOCAL-00001" summary="delete EmpController">
+      <created>1604452423818</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604452423818</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +308,26 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="delete EmpController" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete EmpController" />
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/CourseController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/CourseController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="period.get(0)" language="JAVA" />
