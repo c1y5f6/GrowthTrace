@@ -1,15 +1,15 @@
 package com.jxd.mybatisPlus.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.jxd.mybatisPlus.model.Class;
 import com.jxd.mybatisPlus.model.Course;
+import com.jxd.mybatisPlus.model.SelectedCourse;
 import com.jxd.mybatisPlus.model.Teacher;
 import com.jxd.mybatisPlus.service.ICourseService;
+import com.jxd.mybatisPlus.service.ISelectedCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,12 +29,13 @@ public class CourseController {
     @Autowired
     ICourseService iCourseService;
 
+
+    //获取课程名列表list
     @RequestMapping("/getCourseForStudentTable")
     @ResponseBody
     public List<String> getCourseForStudentTable(){
         QueryWrapper<Course> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("flag_deleted",0);
-
         List<Course> list = iCourseService.list(queryWrapper);
 //        int flag = 1;
 //        List<Map<String,Object>> mapList = new ArrayList<>();
@@ -73,4 +74,5 @@ public class CourseController {
         }
         return mapList;
     }
+
 }

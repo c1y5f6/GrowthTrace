@@ -27,4 +27,5 @@ public class ICourseServiceImpl extends ServiceImpl<ICourseMapper, Course> imple
     public List<Map<String,Object>> getCourseByClass(int classNo) {
         return iCourseMapper.getCourseByClass(classNo);
     }
+
 }

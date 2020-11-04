@@ -1,7 +1,9 @@
 package com.jxd.mybatisPlus.model;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 
 /**
  * @ClassName: SelectedCourse
@@ -11,8 +13,9 @@ import com.baomidou.mybatisplus.annotation.TableId;
  * @Version: V1.0
  **/
 //创建教师要教授的课程类
+    @TableName("course_selected")
 public class SelectedCourse {
-    @TableId(value = "select_id")
+    @TableId(value = "select_id",type = IdType.AUTO)
     private Integer Id;//已选课程序号
     @TableField(value = "course_id")
     private Integer courseId;//课程id
@@ -20,6 +23,11 @@ public class SelectedCourse {
     private Integer classid;
 
     public SelectedCourse() {
+    }
+
+    public SelectedCourse(Integer courseId, Integer classid) {
+        this.courseId = courseId;
+        this.classid = classid;
     }
 
     public SelectedCourse(Integer id, Integer courseId, Integer classid) {
