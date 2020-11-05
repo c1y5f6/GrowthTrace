@@ -18,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="b2d6fd2555dd3750b88b955ac90233380fe2065d" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -40,14 +45,15 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.6268908" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -55,11 +61,11 @@
       <recent name="com.jxd.mybatisPlus" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\file\GrowthTrace_sys\src\main\webapp\upload" />
-      <recent name="E:\file\GrowthTrace_sys\src\main\webapp\images" />
-      <recent name="E:\file\GrowthTrace_sys\src\main\java\com\jxd\mybatisPlus\config" />
-      <recent name="E:\file\GrowthTrace_sys\src\main\resources\mapping" />
-      <recent name="E:\file\GrowthTrace_sys\src\main\resources" />
+      <recent name="E:\Users\91245\IdeaProjects\GrowthTrace\src\main\java\com\jxd\mybatisPlus\controller" />
+      <recent name="E:\Users\91245\IdeaProjects\GrowthTrace\src\main\java\com\jxd\mybatisPlus\service" />
+      <recent name="E:\Users\91245\IdeaProjects\GrowthTrace\src\main\java\com\jxd\mybatisPlus\service\impl" />
+      <recent name="E:\Users\91245\IdeaProjects\GrowthTrace\src\main\resources\mapping" />
+      <recent name="E:\Users\91245\IdeaProjects\GrowthTrace\src\main\java\com\jxd\mybatisPlus\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration name="ITeacherServiceImpl.getTeacherListForPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GrowthTrace_sys" />
       <extension name="coverage">
@@ -119,6 +125,19 @@
       <option name="MAIN_CLASS_NAME" value="com.jxd.mybatisPlus.test.Test" />
       <option name="METHOD_NAME" value="getTeacherListForPage" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="GrowthTrace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jxd.mybatisPlus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jxd.mybatisPlus.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -236,9 +255,11 @@
       <item itemvalue="JUnit.Test.getTeacherListForPage" />
       <item itemvalue="JUnit.Test.getTeacherList" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.Test.getTeacherList" />
         <item itemvalue="JUnit.Test.getTeacherListForPage" />
@@ -266,6 +287,10 @@
       <workItem from="1604382303761" duration="11900000" />
       <workItem from="1604450243628" duration="17420000" />
       <workItem from="1604536738304" duration="1632000" />
+      <workItem from="1604539722028" duration="1450000" />
+      <workItem from="1604541188917" duration="1992000" />
+      <workItem from="1604543848421" duration="472000" />
+      <workItem from="1604544349464" duration="443000" />
     </task>
     <task id="LOCAL-00001" summary="delete EmpController">
       <created>1604452423818</created>
@@ -288,7 +313,28 @@
       <option name="project" value="LOCAL" />
       <updated>1604478597529</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="11/5 10.20">
+      <created>1604542878790</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604542878790</updated>
+    </task>
+    <task id="LOCAL-00005" summary="11/5 10.20">
+      <created>1604542938243</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604542938243</updated>
+    </task>
+    <task id="LOCAL-00006" summary="11/5 10.20">
+      <created>1604544143892</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604544143892</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +398,8 @@
     <MESSAGE value="delete EmpController" />
     <MESSAGE value="11/4 13:41" />
     <MESSAGE value="11/4 16.29" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/4 16.29" />
+    <MESSAGE value="11/5 10.20" />
+    <option name="LAST_COMMIT_MESSAGE" value="11/5 10.20" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

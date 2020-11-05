@@ -2,6 +2,7 @@ package com.jxd.mybatisPlus.model;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 
 /**
  * @ClassName: SchoolEvaluation
@@ -10,6 +11,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
  * @Date: 2020/10/30
  * @Version: V1.0
  **/
+@TableName(value = "evaluation_of_school")
 //创建学校评价类
 public class SchoolEvaluation {
     @TableId(value = "id")
@@ -22,7 +24,7 @@ public class SchoolEvaluation {
     private String teacherName;//教师姓名
     @TableField(value = "overall_score")
     private Integer overallScore;//整体评价分数
-    @TableField(value = "evaluation_form_school")
+    @TableField(value = "schoolEvaluation")
     private String schoolEvaluation;//学校对学员的评价
 
     public SchoolEvaluation() {
