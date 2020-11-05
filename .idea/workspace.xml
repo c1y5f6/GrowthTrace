@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b9aee7-6bbc-47ed-8599-54628a8fe04a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/GrowthTrace.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/mapper/IDeptEvaluationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/mapper/IMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/mapper/ISchoolEvaluationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/mapper/IUserLoginMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/UserLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/IDeptEvaluationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/IMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/ISchoolEvaluationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/IUserLoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/impl/DeptEvaluationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/impl/SchoolEvaluationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/impl/UserLoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/DeptEvaluationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/SchoolEvaluationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserLoginMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/DeptEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/DeptEvaluation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/QualityScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/QualityScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/SchoolEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/SchoolEvaluation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/GrowthTrace_sys.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/ClassController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/ClassController.class" afterDir="false" />
-    </list>
+    <list default="true" id="c2b9aee7-6bbc-47ed-8599-54628a8fe04a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +288,7 @@
       <workItem from="1604450243628" duration="17420000" />
       <workItem from="1604536738304" duration="1632000" />
       <workItem from="1604539722028" duration="1450000" />
-      <workItem from="1604541188917" duration="1430000" />
+      <workItem from="1604541188917" duration="1720000" />
     </task>
     <task id="LOCAL-00001" summary="delete EmpController">
       <created>1604452423818</created>
@@ -342,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604478597529</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="11/5 10.20">
+      <created>1604542878790</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604542878790</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +382,8 @@
     <MESSAGE value="delete EmpController" />
     <MESSAGE value="11/4 13:41" />
     <MESSAGE value="11/4 16.29" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/4 16.29" />
+    <MESSAGE value="11/5 10.20" />
+    <option name="LAST_COMMIT_MESSAGE" value="11/5 10.20" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
