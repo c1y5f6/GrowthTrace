@@ -14,6 +14,7 @@ import org.springframework.format.annotation.DateTimeFormat;
  * @Version: V1.0
  **/
 //创建学员类
+@TableName(value = "student")
 public class Student {
     @TableId(value = "student_id",type = IdType.AUTO)
     private Integer id;//学员序号

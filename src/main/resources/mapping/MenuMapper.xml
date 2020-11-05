@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--dao接口的全限定名-->
+<mapper namespace="com.jxd.mybatisPlus.mapper.IMenuMapper">
+    <select id="queryAllMenu" resultType="java.util.Map">
+        SELECT
+            m.id,
+            m.path,
+            m.name,
+            m.nameZh,
+            m.component,
+            m.iconCls,
+            m.parentId
+        FROM
+            userMenu um
+            LEFT JOIN menu m ON um.menuid = m.id
+        WHERE
+            um.role = #{role}
+    </select>
+</mapper>

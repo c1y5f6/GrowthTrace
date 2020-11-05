@@ -2,6 +2,7 @@ package com.jxd.mybatisPlus.model;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 
 /**
  * @ClassName: DeptEvaluation
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
  * @Version: V1.0
  **/
 //创建部门评价类
+@TableName(value = "evaluation_of_dept")
 public class DeptEvaluation {
     @TableId(value = "id")
     private Integer Id;//序号
@@ -21,7 +23,7 @@ public class DeptEvaluation {
     @TableField(value = "job")
     private String job;//员工职务
     @TableField(value = "manager_name")
-    private String manegerName;//主管姓名
+    private String managerName;//主管姓名
     @TableField(value = "overall_score")
     private Integer overallScore;//整体评价分数
     @TableField(value = "evaluation_form_dept")
@@ -32,12 +34,12 @@ public class DeptEvaluation {
     public DeptEvaluation() {
     }
 
-    public DeptEvaluation(Integer id, Integer studentId, String deptName, String job, String manegerName, Integer overallScore, String deptEvaluation, Integer year) {
+    public DeptEvaluation(Integer id, Integer studentId, String deptName, String job, String managerName, Integer overallScore, String deptEvaluation, Integer year) {
         Id = id;
         this.studentId = studentId;
         this.deptName = deptName;
         this.job = job;
-        this.manegerName = manegerName;
+        this.managerName = managerName;
         this.overallScore = overallScore;
         this.deptEvaluation = deptEvaluation;
         this.year = year;
@@ -59,8 +61,8 @@ public class DeptEvaluation {
         this.job = job;
     }
 
-    public void setManegerName(String manegerName) {
-        this.manegerName = manegerName;
+    public String getManagerName() {
+        return managerName;
     }
 
     public void setOverallScore(Integer overallScore) {
@@ -91,8 +93,8 @@ public class DeptEvaluation {
         return job;
     }
 
-    public String getManegerName() {
-        return manegerName;
+    public void setManagerName(String managerName) {
+        this.managerName = managerName;
     }
 
     public Integer getOverallScore() {
