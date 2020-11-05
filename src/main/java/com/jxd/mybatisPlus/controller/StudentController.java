@@ -64,4 +64,19 @@ public class StudentController {
     public boolean addStudent(Student student) {
         return iStudentService.save(student);
     }
+    @RequestMapping("/getStudentById/{studentId}")
+    @ResponseBody
+    /**
+     * @Descriptnio:根据学生id获取详细信息
+     * @Author: Yan XiaoZhi
+     * @Date: 2020/11/5 10:23
+     * @param studentId:
+     * @return: java.util.Map<java.lang.String,java.lang.Object>
+     **/
+    public Map<String, Object> getStudentById(@PathVariable("studentId") Integer studentId){
+        QueryWrapper<Student> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("student_id",studentId);
+        Map<String, Object> map = iStudentService.getMap(queryWrapper);
+        return map;
+    }
 }
