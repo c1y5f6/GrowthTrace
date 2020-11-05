@@ -1,5 +1,6 @@
 package com.jxd.mybatisPlus.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.jxd.mybatisPlus.mapper.IClassMapper;
 import com.jxd.mybatisPlus.model.Class;
 import com.jxd.mybatisPlus.model.Course;
@@ -42,7 +43,9 @@ public class ClassController {
     @ResponseBody
     public List<Integer> getClassList(){
         List<Integer> list=new ArrayList<>();
-        List<Class> list1 = iClassService.list();
+        QueryWrapper<Class> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByAsc("class_no");
+        List<Class> list1 = iClassService.list(queryWrapper);
         for (Class c :list1) {
             list.add(c.getId());
         }
@@ -53,7 +56,7 @@ public class ClassController {
     @RequestMapping("/addClass/{id}/{teacherId}/{course}")
     @ResponseBody
     public int AddClassAndSelectCourse(Class c
-            ,@PathVariable(value = "course") String[] course){
+                                        ,@PathVariable(value = "course") String[] course){
         int flag = 0;
         List<Integer> courseId = new ArrayList<>();
         //获取课程列表
@@ -66,6 +69,7 @@ public class ClassController {
                 }
             }
         }
+        //添加选课
         if(iClassService.save(c)){
             for (Integer cId:courseId) {
                 SelectedCourse selectedCourse = new SelectedCourse(cId,c.getId());

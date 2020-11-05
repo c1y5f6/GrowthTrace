@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b9aee7-6bbc-47ed-8599-54628a8fe04a" name="Default Changelist" comment="11/4 13:41">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/mapper/ISelectedCourseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/ISelectedCourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/impl/ISelectedCourseServiceImpl.java" afterDir="false" />
+    <list default="true" id="c2b9aee7-6bbc-47ed-8599-54628a8fe04a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/ClassController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/SelectedCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/model/SelectedCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/impl/ICourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/service/impl/ICourseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/ClassController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/ClassController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/controller/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/model/Class.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/model/Class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/model/SelectedCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jxd/mybatisPlus/model/SelectedCourse.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -278,7 +268,8 @@
       <workItem from="1604314510461" duration="599000" />
       <workItem from="1604362486215" duration="9704000" />
       <workItem from="1604382303761" duration="11900000" />
-      <workItem from="1604450243628" duration="13743000" />
+      <workItem from="1604450243628" duration="17420000" />
+      <workItem from="1604536738304" duration="1632000" />
     </task>
     <task id="LOCAL-00001" summary="delete EmpController">
       <created>1604452423818</created>
@@ -294,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604468546626</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="11/4 16.29">
+      <created>1604478597529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604478597529</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,18 +355,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="delete EmpController" />
     <MESSAGE value="11/4 13:41" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/4 13:41" />
+    <MESSAGE value="11/4 16.29" />
+    <option name="LAST_COMMIT_MESSAGE" value="11/4 16.29" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jxd/mybatisPlus/controller/ClassController.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="period.get(0)" language="JAVA" />
