@@ -38,10 +38,10 @@ public class ClassController {
     @Autowired
     ICourseService iCourseService;
 
-    //获取班级列表
+    //获取班级列表1231321321321321321322
     @RequestMapping("getClassList")
     @ResponseBody
-    public List<Integer> getClassList(){
+        public List<Integer> getClassList(){
         List<Integer> list=new ArrayList<>();
         QueryWrapper<Class> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc("class_no");

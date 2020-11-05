@@ -19,15 +19,26 @@ public class QualityScore {
     private Integer studentId;//学生序号
     @TableField(value = "score")
     private Integer score;//得分
+    @TableField(value = "period_no")
+    private Integer year;//工作几年了
 
     public QualityScore() {
     }
 
-    public QualityScore(Integer id, Integer qualityId, Integer studentId, Integer score) {
+    public QualityScore(Integer id, Integer qualityId, Integer studentId, Integer score, Integer year) {
         Id = id;
         this.qualityId = qualityId;
         this.studentId = studentId;
         this.score = score;
+        this.year = year;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
     }
 
     public void setId(Integer id) {

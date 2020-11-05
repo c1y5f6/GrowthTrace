@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--dao接口的全限定名-->
+<mapper namespace="com.jxd.mybatisPlus.mapper.IDeptEvaluationMapper">
+    <select id="getDeptScoreById" resultType="map">
+        select q.quality_name,qs.score from quality q,quality_score qs where
+        q.quality_id=qs.quality_id and qs.student_id=#{studentId} and qs.period_no=#{year}
+    </select>
+</mapper>

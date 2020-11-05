@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--        当mapper接口和mapper.xml文件关联时，命名空间namespace就需要配置成接口的全限定名称，将来我们通过mapper接口的方法名来调用sql语句-->
+<mapper namespace="com.jxd.mybatisPlus.mapper.IUserLoginMapper">
+<!--    登录-->
+    <select id="getLogin" resultType="UserLogin">
+        select * from userlogin where id = #{id} and password = #{pwd}
+    </select>
+<!--    分页查询-->
+    <select id="getUserByRole" resultType="map">
+        select id,name from userlogin
+        <where>
+            <if test="name != 'all'">
+                name like concat('%',#{name},'%')
+            </if>
+            and role = #{role}
+        </where>
+        limit #{counts},#{pageSize}
+    </select>
+    <!--    不分页获取所有-->
+    <select id="getAllUserByLike" resultType="map">
+        select * from userlogin
+        <where>
+            <if test="name != 'all'">
+                name like concat('%',#{name},'%')
+            </if>
+            and role = #{role}
+        </where>
+    </select>
+</mapper>
