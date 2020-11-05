@@ -3,7 +3,6 @@ package com.jxd.mybatisPlus.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jxd.mybatisPlus.mapper.ICourseMapper;
 import com.jxd.mybatisPlus.mapper.ICourseScoreMapper;
-import com.jxd.mybatisPlus.mapper.IEvaluationDeptMapper;
 import com.jxd.mybatisPlus.mapper.IStudentMapper;
 import com.jxd.mybatisPlus.model.Student;
 import com.jxd.mybatisPlus.service.IStudentService;
@@ -30,17 +29,9 @@ public class IStudentServiceImpl extends ServiceImpl<IStudentMapper, Student> im
 
     @Autowired
     ICourseMapper iCourseMapper;
-    @Autowired
-    ICourseScoreMapper iCourseScoreMapper;
-    @Autowired
-    IEvaluationDeptMapper iEvaluationDeptMapper;
 
 
-    public List<Map<String,Object>> getStudentInfoListByClassNo(){
-        List<Map<String,Object>> list = null;
-        return list;
-    }
-
+    //获取总表
     @Override
     public List<Map<String, Object>> getCourseByClass(int classNo,String name,Integer curPage,Integer pageSize) {
         List<Integer> selectedCoruse = iCourseMapper.getSelectedCourseByClassNo(classNo);
@@ -48,7 +39,7 @@ public class IStudentServiceImpl extends ServiceImpl<IStudentMapper, Student> im
         List<Map<String, Object>> list =iStudentMapper.getStudentInfoListByClassNo2(classNo,selectedCoruse,Arrays.asList(0,1,2,3),name,startIndex,pageSize);
         return list;
     }
-
+    //删除学生 假删
     public int deleteStudentById(Integer id){
         return iStudentMapper.deleteStudentById(id);
     }
